@@ -12,5 +12,5 @@ df_scaled = min_max_scaler.fit_transform(df)
 df_norm = pd.DataFrame(df_scaled, columns=df.columns)
 df_norm.head(5)
 
-# method2: bring the data to a unit distribution
+# method2: bring the data to a unit normal distribution
 df_stand = preprocessing.scale(df)
