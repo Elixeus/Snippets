@@ -12,3 +12,16 @@ def unique_in_order(iterable):
     else:
         return [ls[index] for index in range(len(ls) - 1)
                 if ls[index] != ls[index + 1]] + [ls[-1]]
+'''
+Sometimes a simple for loop is better than a list comprehension.
+'''
+
+
+def unique_in_order(iterable):
+    result = []
+    prev = None
+    for char in iterable:
+        if char != prev:
+            result.append(char)
+            prev = char
+    return result
