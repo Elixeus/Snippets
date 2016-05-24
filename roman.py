@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 
-def parser(roman):
+def Parser(roman):
     '''
     This function receives a Roman Numeral String and convert it to an
     Arabic Number.
@@ -33,7 +33,7 @@ def parser(roman):
 def main():
     roman = raw_input('Input the Roman Numeral:\n')
     print '{roman} is {arabic}.'.format(roman=roman,
-                                        arabic=parser(roman))
+                                        arabic=Parser(roman))
 
 
 if __name__ == '__main__':
