@@ -10,5 +10,6 @@ called data['category'])
 
 
 ls = list(set(data['category']))
-cat_dict = dict((j, i) for i, j in enumerate(ls))
+#cat_dict = dict((j, i) for i, j in enumerate(ls))
+cat_dict = {j: i for i, j in enumerate(ls)}
 data['category'] = map(lambda x: cat_dict[x], data['category'])
