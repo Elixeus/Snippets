@@ -9,5 +9,9 @@ but not in both.
 '''
 a = set(range(10))
 b = set(range(5, 15))
+#  we can either use the symmetric_difference method
 difference = a.symmetric_difference(b)
 print(difference)
+#  or we can use the ^ operator
+print(a ^ b)
+print(difference == a ^ b)
